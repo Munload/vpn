@@ -1,1 +1,16 @@
-I3Byb2ZpbGUtdGl0bGU6IE11bmxvYWQgVlBOCgZ2bGVzczovLzY0NjE0Y2UwLThmYmYtMjMyOC1iNTIxLWUxMTM1YWRmZmUyMUA4OS4yMDguMjMxLjE5MTo4NDQzP2Zsb3c9eHRscy1ycHJ4LXZpc2lvbiZlbmNyeXB0aW9uPW5vbmUmdHlwZT10Y3Amc2VjdXJpdHk9cmVhbGl0eSZmcD1xcSZzbmk9bWF4LnJ1JnBiaz00Q0gzbzV6T01jRk5NYm53WG5rQWcwRkZpcG1jczBRemhhaFhrVXpiMWlrJnNpZD1kOGM2YjU4YmNiYjBjMzIzIyVGMCU5RiU4NyVBQSVGMCU5RiU4NyVBQSUyME11bmxvYWQlMjBWUE4lMjAlN0MlMjBFc3RvbmlhJTIwJTVCTFRFJTVE
+#profile-title: Munload VPN
+proxies:
+  - name: "🇪🇪 Munload VPN | Estonia [LTE]"
+    type: vless
+    server: 89.208.231.191
+    port: 8443
+    uuid: 64614ce0-8fbf-2328-b521-e1135adffe21
+    udp: true
+    tls: true
+    flow: xtls-rprx-vision
+    servername: max.ru
+    network: tcp
+    reality-opts:
+      public-key: 4CH3o5zOMcFNMbnwXnkAg0FFepmsc0QzhahXkUzb1ik
+      short-id: d8c6b58bcbb0c323
+    client-fingerprint: qq
