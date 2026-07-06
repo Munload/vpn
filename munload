@@ -1,28 +1,2 @@
 #profile-title: Munload VPN
-
-proxies:
-  - name: "🇷🇺 Munload VPN | Россия [LTE Рабочий]"
-    type: vless
-    server: dns.pleiades.codes
-    port: 443
-    uuid: bd575034-54c9-4f16-840c-6f9f2832500a
-    udp: true
-    tls: true
-    flow: ""
-    servername: dns.pleiades.codes
-    network: xhttp
-    xhttp-opts:
-      path: "/uploadfiles/"
-      host: dns.pleiades.codes
-      mode: packet-up
-      extra:
-        uplinkHTTPMethod: GET
-        xPaddingHeader: X-Cache
-        xPaddingKey: _dc
-        xPaddingMethod: tokenish
-        xPaddingObfsMode: true
-        xPaddingPlacement: queryInHeader
-    client-fingerprint: chrome
-    alpn:
-      - h2
-      - http/1.1
+vless://bd575034-54c9-4f16-840c-6f9f2832500a@dns.pleiades.codes:443?encryption=none&security=tls&sni=dns.pleiades.codes&alpn=h2,http/1.1&fp=chrome&type=xhttp&mode=packet-up&path=%2Fuploadfiles%2F&host=dns.pleiades.codes&header_X-Cache=_dc&header_X-Padding-Method=tokenish&header_X-Padding-Placement=queryInHeader#%F0%9F%87%B7%F0%9F%87%BA%20Munload%20VPN%20%7C%20%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F%20%5BLTE%20%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%5D
