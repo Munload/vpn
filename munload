@@ -2,7 +2,8 @@
 #profile-update-interval: 1
 #support-url: https://t.me/munload
 #profile-web-page-url: https://t.me/munload_vpn
-#announce: t.me/reihof · 2420 configs · last update: 04:53 08/07/2026
+#announce: Глушат LTE - перебери все конфиги
+поддержка: @munload
 #subscription-userinfo: upload=0; download=0; total=0; expire=0
 
 vless://0970324b-8c61-4ae7-8c3f-385a6f1e17e4@154.83.2.24:443?path=/&security=tls&encryption=none&insecure=0&host=vpn47.cc.cd&fp=chrome&type=ws&allowInsecure=0&sni=vpn47.cc.cd#%F0%9F%87%AB%F0%9F%87%AE%20Munload%20VPN%20%7C%20%D0%A4%D0%B8%D0%BD%D0%BB%D1%8F%D0%BD%D0%B4%D0%B8%D1%8F%20%5BLTE%5D
