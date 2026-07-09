@@ -10,6 +10,133 @@ vless://c6a69ab6-6236-41b3-ac14-043a44b114f8@www.cinema-dow.ru:443?encryption=no
 vless://c6a69ab6-6236-41b3-ac14-043a44b114f8@www.carstin.ru:443?encryption=none&security=tls&sni=www.carstin.ru&alpn=h2,http/1.1&fp=firefox&type=xhttp&mode=packet-up&path=%2F#proxy-3
 vless://8a6f9d0b-dc16-431b-8914-cf8fde1eae7e@213.219.212.105:443?flow=xtls-rprx-vision&encryption=none&type=raw&security=reality&fp=qq&sni=eh.vk.ru&pbk=AAZjVvbC7AwPKot_1ygO5VMpN7XYifCA7lG0RNR5sEk#%F0%9F%87%B7%F0%9F%87%BA%20%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F%20%231%20%5BLTE%5D
 vless://8a6f9d0b-dc16-431b-8914-cf8fde1eae7e@213.219.212.14:443?flow=xtls-rprx-vision&encryption=none&type=raw&security=reality&fp=chrome&sni=eh.vk.ru&pbk=AAZjVvbC7AwPKot_1ygO5VMpN7XYifCA7lG0RNR5sEk#%F0%9F%87%B7%F0%9F%87%BA%20%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F%20%232%20%5BLTE%5D
-vless://8a6f9d0b-dc16-431b-8914-cf8fde1eae7e@213.219.212.14:443?flow=xtls-rprx-vision&encryption=none&type=raw&security=reality&fp=firefox&sni=eh.vk.ru&pbk=AAZjVvbC7AwPKot_1ygO5VMpN7XYifCA7lG0RNR5sEk#%F0%9F%87%B7%F0%9F%87%BA%20%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F%20%233%20%5BLTE%5D
-vless://a5d0bebb-3a92-075a-2df3-4c7d36b04af0@213.219.212.105:443?flow=xtls-rprx-vision&fp=firefox&host=213.219.212.105&packetEncoding=xudp&pbk=AAZjVvbC7AwPKot_1ygO5VMpN7XYifCA7lG0RNR5sEk&security=reality&sni=eh.vk.ru&type=tcp#%F0%9F%87%B7%F0%9F%87%BA%20%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F%20%234%20%5BLTE%5D
-vless://0047a8bc-0025-4d45-899b-c75c669f3ede@178.248.232.186:8443?flow=xtls-rprx-vision&encryption=none&type=raw&security=reality&fp=qq&sni=storage.yandex.net&pbk=LT_0j3zQkaqgtJHvyaG24xz0IfmXUswVCTeC75Qsgjo&sid=ab4cc4f5aa354fa4#%F0%9F%87%B3%F0%9F%87%B1%20%D0%9D%D0%B8%D0%B4%D0%B5%D1%80%D0%BB%D0%B0%D0%BD%D0%B4%D1%8B%20%232%20%5BLTE%5D
+{
+  "outbounds": [
+    {
+      "protocol": "vless",
+      "streamSettings": {
+        "network": "xhttp",
+        "security": "tls",
+        "tlsSettings": {
+          "alpn": ["h2", "http/1.1"],
+          "fingerprint": "firefox",
+          "serverName": "cdn-market.flowersrumarket.ru"
+        },
+        "xhttpSettings": {
+          "extra": {
+            "path": "/",
+            "uplinkHTTPMethod": "GET",
+            "xPaddingHeader": "X-Cache",
+            "xPaddingKey": "_dc",
+            "xPaddingMethod": "tokenish",
+            "xPaddingObfsMode": true,
+            "xPaddingPlacement": "queryInHeader"
+          },
+          "host": "cdn-market.flowersrumarket.ru",
+          "mode": "packet-up",
+          "path": "/"
+        }
+      },
+      "settings": {
+        "vnext": [
+          {
+            "address": "cdn-market.flowersrumarket.ru",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "",
+                "id": "c6a69ab6-6236-41b3-ac14-043a44b114f8"
+              }
+            ]
+          }
+        ]
+      },
+      "tag": "proxy [xhttp]"
+    },
+    {
+      "protocol": "vless",
+      "streamSettings": {
+        "network": "xhttp",
+        "security": "tls",
+        "tlsSettings": {
+          "alpn": ["h2", "http/1.1"],
+          "fingerprint": "firefox",
+          "serverName": "www.cinema-dow.ru"
+        },
+        "xhttpSettings": {
+          "extra": {
+            "path": "/",
+            "uplinkHTTPMethod": "GET",
+            "xPaddingHeader": "X-Cache",
+            "xPaddingKey": "_dc",
+            "xPaddingMethod": "tokenish",
+            "xPaddingObfsMode": true,
+            "xPaddingPlacement": "queryInHeader"
+          },
+          "host": "www.cinema-dow.ru",
+          "mode": "packet-up",
+          "path": "/"
+        }
+      },
+      "settings": {
+        "vnext": [
+          {
+            "address": "www.cinema-dow.ru",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "",
+                "id": "c6a69ab6-6236-41b3-ac14-043a44b114f8"
+              }
+            ]
+          }
+        ]
+      },
+      "tag": "proxy-2 [xhttp]"
+    },
+    {
+      "protocol": "vless",
+      "streamSettings": {
+        "network": "xhttp",
+        "security": "tls",
+        "tlsSettings": {
+          "alpn": ["h2", "http/1.1"],
+          "fingerprint": "firefox",
+          "serverName": "www.carstin.ru"
+        },
+        "xhttpSettings": {
+          "extra": {
+            "path": "/",
+            "uplinkHTTPMethod": "GET",
+            "xPaddingHeader": "X-Cache",
+            "xPaddingKey": "_dc",
+            "xPaddingMethod": "tokenish",
+            "xPaddingObfsMode": true,
+            "xPaddingPlacement": "queryInHeader"
+          },
+          "host": "www.carstin.ru",
+          "mode": "packet-up",
+          "path": "/"
+        }
+      },
+      "settings": {
+        "vnext": [
+          {
+            "address": "www.carstin.ru",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "",
+                "id": "c6a69ab6-6236-41b3-ac14-043a44b114f8"
+              }
+            ]
+          }
+        ]
+      },
+      "tag": "proxy-3 [xhttp]"
+    }
+  ]
+}
